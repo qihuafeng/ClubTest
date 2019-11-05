@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*body{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+*/
+/*头部菜单 */
+/*body{
+	margin-left:1px;
+	margin-right:1px;
+}*/
+.head{
+	background-color:#272936;
+}
+.underhead{
+	background-color:#293642;
+}
+
+.clubName {
+	color:red;
+	font-size:30px;
+	font-family:cursive;
+}
+
+.top {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.top a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration:none;
+}
+
+ 
+/* .top a span {
+    font-weight: bold;
+} */
+.top a:hover{
+
+    color:blue;  //鼠标移入后颜色改变为红色
+
+}
+
+.login{
+	margin-top:20px;
+	padding-rght:10px;
+	
+	
+}
+.login a{
+	color:white;
+	font-size:20px;
+	margin-right:0px;
+	text-decoration:none;
+}
+.login a:hover{
+	color:green;
+}
+
+ul {
+      list-style-type: none;
+}
+
+
+
+.photo{
+    float:left;
+    width:10%;
+    padding-top:30px;
+    padding-right:20px;
+}
+
+        
+.photo2{
+	padding-left:90px;
+	padding-top:30px;
+	padding-bottom:20px;
+	
+}
+.intro{
+    float:right;
+    width:80%;
+    color:white;
+}
+	
+}
+.row1{
+	background-color:red;
+}
+
+.font1 {
+	color:white;
+	font-size:25px;
+	
+}
+.font2 {
+	color:white;
+	font-size:15px;
+}
+/* 服务产品介绍 */
+.prdouct{
+
+  
+   background-color:black;
+   
+   margin-top:100px;
+   padding-bottom:50px;
+   
+  
+   
+   
+
+}
+
+
+/*我们的客户*/
+.partner_logo{
+	margin-top:30px;
+	padding-left:20px;
+	border:1px solid black;
+}
+
+.partner_logo img{
+	width:200px;
+}
+
+/*联系我们*/
+.contact{
+
+    background:url(/static/images/contact.jpg)  no-repeat center center;
+  
+    height:200px;
+    width:100%;
+   
+    background-size:cover;
+
+    background-attachment:fixed;
+   
+ 
+    /*background-color:black;
+    
+    margin-top:50px;
+    height:200px;
+   */
+   
+  
+   
+
+}
+.contact_way{
+	color:white;
+	font-size:25px;
+	margin-top:30px"
+}
+.contact_way a {
+    
+    text-decoration:none;
+}
+
+.contact_way a:hover{
+	color:red;
+}
+
+/*工作流程*/
+.process_image{
+	padding-top:80px;
+	padding-left:45px;
+}
+.process_title{
+	padding-top:20px;
+	text-align:center;
+}
+
+/*页脚设计*/
+.footTop{
+	margin-top:80px;	
+	padding-top:30px;
+	padding-bottom:50px;
+	background-color:#091126;
+	
+}
+.footTop_title{
+	color:white;
+	font-size:20px;
+}
+.footTop_content{
+	color:white;
+	font-size:15px;
+	padding-top:20px;
+}
+.footTop_content2{
+	padding-top:15px;
+	color:white;
+	font-size:15px;
+}
+
+.footTop_share{
+	padding-left:15px;
+	padding-top:20px;
+}
+
+
+.footTop_redirect {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.footTop_redirect a {
+    color: white;
+    font-size: 20px;
+    margin-right:5px;
+    text-decoration:none;
+}
+.footTop_banquan{
+	color:white;
+	font-size:15px;
+	text-align:center;
+	
+	
+}
+.footTop_redirect a:hover{
+	color:red;
+}
+.footTop_redirect a span:hover{
+
+    color:red;  //鼠标移入后颜色改变为红色
+
+}
+
+
+.teamLunBoTitle{
+	margin-top:100px;
+	
+	background-color:black;
+   
+}
+

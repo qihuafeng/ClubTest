@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>首页</title>
+<link rel="stylesheet" href="static/bootstrap3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="static/bootstrap3/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="static/css/index.css" />
+
+<link rel="stylesheet" href="static/css/film.css" />
+
+<link href="static/indexLunBo1/css/poposlides.css" rel="stylesheet" >
+
+<link type="text/css" rel="Stylesheet" href="static/teamLunBo/css/imageflow.css" />
+<script type="text/javascript" src="static/teamLunBo/js/jquery.js"></script>
+<script type="text/javascript" src="static/teamLunBo/js/imageflow.js"></script>
+
+</head>
+<body>
+
+<!-- 公共页面,头部菜单抽取 -->
+ <div class="head">
+ 
+    <div class="row" style="background-color:black">
+       <div th:include="common/head::#h"></div>
+    </div>
+   
+</div>
+
+<!-- 轮播图 -->
+<div class="slides-box">
+    <ul class="slides">
+    <li style="background: url('static/indexLunBo1/images/case2.jpg') center"></li>
+    <li style="background: url('static/indexLunBo1/images/case6.png') center"></li>
+    <li style="background: url('static/indexLunBo1/images/case4.png') center"></li>
+    </ul>
+</div>
+
+<script src="static/indexLunBo1/js/jquery-1.8.3.min.js"></script>
+<script src="static/indexLunBo1/js/poposlides.js"></script> 
+<script>
+	$(".slides").poposlides();
+</script>
+
+<!-- 轮播下部 -->
+<!-- 轮播图下面专注模块 -->
+<div class="underhead">
+		 <div class="container">
+		     <div class="row">
+		      <div class="col-md-3">
+		      <div class="golf">
+		      <div class="photo"><img src="static/images/zhinanzhen.png"></div>
+		      <div class="intro">
+		     <h3>专注</h3>
+		      <p>工作室成立于2018年,专注互联网开发,已有多项成功案例
+	             </p>
+		    </div>
+	         </div>
+	
+		        </div>
+		     <div class="col-md-3">
+		      <div class="golf">
+		      <div class="photo"><img src="static/images/chuangxin2.png"></div>
+		      <div class="intro">
+		     <h3>原创</h3>
+		      <p>拥有自主软件著作版权,坚持项目定制开发
+	             </p>
+		    </div>
+	         </div>
+	
+		        </div>
+		        <div class="col-md-3">
+		      <div class="golf">
+		      <div class="photo"><img src="static/images/pintu.png"></div>
+		      <div class="intro">
+		     <h3>专业</h3>
+		      <p>团队有专业的美工,前后端人员,经验丰富,专注互联网开发
+	             </p>
+		    </div>
+	         </div>
+	
+		        </div>
+		        <div class="col-md-3">
+		      <div class="golf">
+		      <div class="photo"><img src="static/images/alarm_clock.png"></div>
+		      <div class="intro">
+		     <h3>效率</h3>
+		      <p>高效服务过学校网络构建,企业构建,移动营业厅定制服务等项目
+	             </p>
+		    </div>
+	         </div>
+	             
+		        </div>
+		      
+		      </div>
+		   </div>
+</div>
+
+<div class="container"><!-- 服务项目模块 -->
+    <div class="row" style="padding-top:50px;">
+	   <div class="col-md-12">
+	       <h3 style="text-align:center;font-weight:bold;font-size:40px;">服务项目</h3>
+	       <p style="text-align:center;font-size:20px;margin-top:25px;">用我们的专业和诚信赢得您的信任,从pc到移动互联网均有您想要的服务</p>
+	   </div>
+	
+	   </div>
+	
+	<div class="row">
+	  <div class="col-md-3">
+	  <h3 style="text-align:center;padding-top:50px;">网站建设</h3>
+	  <div class="layout">
+	  <img alt="网站建设" src="static/images/weiruan.png" class="photo2">
+	  </div>
+	  <p style="text-align:center;">企业网站,购物商城,行业门户,社区论坛,政府/事业单位等网站定制开发</p>
+	  </div> 
+	  
+	  <div class="col-md-3">
+	  <h3 style="text-align:center;padding-top:50px;">移动端/APP</h3>
+	  <div class="layout">
+	  <img alt="移动端" src="static/images/android.png" class="photo2">
+	  </div>
+	  <p style="text-align:center;">企业网站,购物商城,行业门户,社区论坛,政府/事业单位等网站定制开发</p>
+	  </div> 
+	  
+	  <div class="col-md-3">
+	  <h3 style="text-align:center;padding-top:50px;">微信/小程序</h3>
+	  <div class="layout">
+	  <img alt="微信/小程序" src="static/images/weixin.png" class="photo2">
+	  </div>
+	  <p style="text-align:center;">企业网站,购物商城,行业门户,社区论坛,政府/事业单位等网站定制开发</p>
+	  </div> 
+	  
+	  <div class="col-md-3">
+	  <h3 style="text-align:center;padding-top:50px;">技术支持</h3>
+	  <div class="layout">
+	  <img alt="技术支持" src="static/images/security.png" class="photo2">
+	  </div>
+	  <p style="text-align:center;">技术支援,安全防护,模板定制,插件定制,技术方案等技术支持服务</p>
+	  </div> 
+	
+	</div>
+	
+	<div class="row">
+				<div class="col-md-3">
+					<h3 style="text-align: center; padding-top: 50px;">活动官网</h3>
+					<div class="layout">
+						<img alt="活动官网" src="static/images/internet.png" class="photo2">
+					</div>
+					<p style="text-align: center;">活动官方网站,信息发布,投票,报名,评比等</p>
+				</div>
+
+				<div class="col-md-3">
+					<h3 style="text-align: center; padding-top: 50px;">行业门户</h3>
+					<div class="layout">
+						<img alt="行业门户" src="static/images/man_technologist.png"
+							class="photo2">
+					</div>
+					<p style="text-align: center;">垂直行业综合门户开发,资讯,交易,分类信息,下载等</p>
+				</div>
+
+				<div class="col-md-3">
+					<h3 style="text-align: center; padding-top: 50px;">企业网站</h3>
+					<div class="layout">
+						<img alt="" src="static/images/house.png" class="photo2">
+					</div>
+					<p style="text-align: center;">企业门户官网/企业营销型网站定制开发,设计,建设</p>
+				</div>
+
+				<div class="col-md-3">
+					<h3 style="text-align: center; padding-top: 50px;">政府官网</h3>
+					<div class="layout">
+						<img alt="政府官网" src="static/images/government.png" class="photo2">
+					</div>
+					<p style="text-align: center;">政府机构信息化建设,便民服务窗口,安全稳定</p>
+				</div>
+
+			</div>
+  </div>
+
+
+<div class="prdouct"><!-- 产品案例 -->
+   <div class="container">
+	   <div class="row" style="padding-top:50px;">
+	   <div class="col-md-12">
+	       <h3 style="text-align:center;font-weight:bold;font-size:40px;color:white;">案例作品</h3>
+	       <p style="text-align:center;font-size:20px;color:white;margin-top:25px;">用技术与专注，将作品通过艺术与技术的结合,打造精品案例</p>
+	   </div>
+	   </div>
+	   </div>	   
+  </div>
+  
+ <!-- 产品轮转 ,模板太长,抽取到carousel轮播文件中-->
+ <div class="productLunZhuan">
+   <div th:include="common/productLunZhuan::#proLunZhuan"></div>
+</div>
+   <!-- 我们的客户 -->
+   <div class="container" style="padding-top:50px">
+     <div class="row" >
+        <div class="col-md-12">
+           <h3 style="text-align:center;font-weight:bold;font-size:40px;">我们的客户</h3>
+	       <p style="text-align:center;font-size:20px;margin-top:25px;">虽然不都是500强，但我可以给您讲我们与任何一个伙伴的故事</p>
+        </div>
+     </div>
+     <div class="row" style="margin-top:30px">
+       <div class="col-md-3">
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+       </div>
+       
+       <div class="col-md-3">
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+       </div>
+       
+       <div class="col-md-3">
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+       </div>
+       
+       <div class="col-md-3">
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+         <div class="partner_logo">
+            <img src="static/images/yidong.jpg">
+         </div>
+       </div>
+       
+       
+       </div>
+   
+   </div>
+   <!-- 成员轮转图上面文字 -->
+   <div class="teamLunBoTitle">
+   <div class="container">
+	   <div class="row" style="padding-top:50px;">
+	   <div class="col-md-12">
+	       <h3 style="text-align:center;font-weight:bold;font-size:40px;color:white;">工作室成员</h3>
+	       <p style="text-align:center;font-size:20px;color:white;margin-top:25px;">用技术与专注，将作品通过艺术与技术的结合,打造精品案例</p>
+	   </div>
+	   </div>   
+	   </div>	   
+  </div>
+   <!-- 成员图片轮转 -->
+   <div id="LoopDiv">
+<input id="S_Num" type="hidden" value="8" />
+<div id="starsIF" class="imageflow">
+			<img src="static/teamLunBo/images/211414202_R.png" longdesc="http://sc.chinaz.com" width="280" height="300" alt="杨颖" />
+			<img src="static/teamLunBo/images/195739743_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="霍思燕" />
+			<img src="static/teamLunBo/images/184449150_R.png" longdesc="http://sc.chinaz.com" width="280" height="300" alt="马苏" />
+			<img src="static/teamLunBo/images/171852304_R.png" longdesc="http://sc.chinaz.com" width="280" height="300" alt="杜淳" />
+			<img src="static/teamLunBo/images/195359252_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="冯绍峰" />
+			<img src="static/teamLunBo/images/205427556_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="沙溢" />
+			<img src="static/teamLunBo/images/195001998_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="廖凡" />
+			<img src="static/teamLunBo/images/121306920_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="保剑锋" />
+			<img src="static/teamLunBo/images/151817631_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="姚晨" />
+			<img src="static/teamLunBo/images/172141456_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="井柏然" />
+			<img src="static/teamLunBo/images/105953334_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="陈楚河" />
+			<img src="static/teamLunBo/images/092950120_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="李晨" />
+			<img src="static/teamLunBo/images/112020805_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="段奕宏" />
+			<img src="static/teamLunBo/images/210858906_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="朱亚文" />
+			<img src="static/teamLunBo/images/202510490_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="苏有朋" />
+			<img src="static/teamLunBo/images/211605770_R.jpg" longdesc="http://sc.chinaz.com" width="280" height="300" alt="张涵予" />
+</div>
+</div>
+  
+   
+  
+   <!-- 联系我们 -->
+   <div class="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8" style="margin-top:50px">
+                 <h3 style="text-align:center;font-weight:bold;font-size:30px;color:white;">现在,非常期待与您的又一次邂逅</h3>
+	             <p style="text-align:center;font-size:20px;margin-top:15px;color:white;">黑天鹅工作室致力于为您提供最优质的服务</p>
+            </div>
+            <div class="col-md-4" style="border:1px solid red;margin-top:15px;padding-bottom:25px;">
+                <div style="color:white;font-size:30px;margin-top:20px;">联系我们</div>
+                <div class="contact_way">
+                  <a><img src="static/images/contact-qq.png">&nbsp;&nbsp;2212282402</a>
+                </div>
+                <div class="contact_way" style="padding-top:10px">
+                   <a><img src="static/images/contact-telphone.png">&nbsp;&nbsp;19851628716</a>
+                </div>
+            </div>
+         
+         </div>
+      </div>
+   
+   </div>
+   
+   <div class="process"><!-- 服务流程 -->
+     <div class="container" style="padding-top:50px">
+        <div class="row">
+         <div class="col-md-12">
+           <h3 style="text-align:center;font-weight:bold;font-size:40px;">黑天鹅工作室网络服务流程</h3>
+	       <p style="text-align:center;font-size:20px;margin-top:25px;">丰富互联网信息化项目服务经验,让我们对项目实施的规范化标准化有更多的理解</p>
+        </div>
+          </div>
+          
+          <div class="row">
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-goutong1.png"></div>
+                 <div class="process_title">沟通需求</div>
+             </div>
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-hetong.png"></div>
+                 <div class="process_title">签订合同</div>
+             </div>
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-UI.png"></div>
+                 <div class="process_title">UI设计</div>
+             </div>
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-shezhi1.png"></div>
+                 <div class="process_title">开发编码</div>
+             </div>
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-cheshi.png"></div>
+                 <div class="process_title">测试验收</div>
+             </div>
+             <div class="col-md-2">
+                 <div class="process_image"><img src="static/images/process-peixun.png"></div>
+                 <div class="process_title">培训售后</div>
+             </div>
+          </div>
+        </div>
+     
+     </div>
+      <!-- 公共页面,底部页面抽取 -->
+      <div class="footTop">
+        <div class="container">
+        <div class="row">
+           <div class="col-md-3">
+             <div class="footTop_title">工作室精神</div>
+             <div class="footTop_content"><span>严谨认真</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>严谨认真</span></div>
+             <div class="footTop_content"><span>踏实负责</span></div>  
+             </div> 
+             <div class="col-md-3">
+             <div class="footTop_title">服务项目</div>
+             <div class="footTop_content"><span>网站建设</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>移动端/APP</span></div>
+             <div class="footTop_content"><span>微信/小程序</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>技术支持</span></div>  
+             </div>     
+             <div class="col-md-3">
+             <div class="footTop_title">联系我们</div>
+	             <div class="footTop_content2"><span>电话:</span>&nbsp;&nbsp;<span>19851628716</span></div>
+	             <div class="footTop_content2"><span>QQ:</span>&nbsp;&nbsp;&nbsp;<span>19851628716</span></div>
+	             <div class="footTop_content2"><span>邮箱:</span>&nbsp;&nbsp;<span>19851628716@qq.com</span></div>
+	             <div class="footTop_content2"><span>地址:</span>&nbsp;&nbsp;<span>徐州市铜山区大学路1号</span></div>
+             </div>
+             <div class="col-md-3">
+                <div class="footTop_image" style="padding-top:0px;padding-left:5px">
+                   <img src="/static/images/footTop-erweima.png">
+                </div>
+                <div style="color:white;padding-left:15px">微信扫一扫</div>
+                <div class="footTop_share">
+		            <div class="bshare-custom icon-medium-plus"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+		             <a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a>
+		             <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh">
+		             </script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+		        </div>
+		         <div style="color:white;padding-top:10px;padding-left:15px">点击图标分享网页</div>
+		       
+             </div>
+             
+                                                      
+        </div>
+        
+        <div class="row" style="margin-top:20px">
+        <div class="col-md-12">
+           <div style="border-top:1px solid white;"><span></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footTop_redirect">
+            <a href="#"><span>关于我们</span></a>
+            <a>|</a>
+	        <a href="#"><span>新闻资讯</span></a>
+	        <a>|</a>
+	        <a href="#"><span>服务项目</span></a>
+	         <a>|</a>
+	        <a href="#"><span>成功案例</span></a>
+	        </div>
+          </div>
+          <div class="footTop_banquan">版权所有@copyright 2019 黑天鹅工作室</div>
+          <div class="footTop_banquan">本站内容,图片部分来自网络,如有涉及侵犯版权,请联系我们提供书面反馈,我们核实后会立即删除.</div>
+        </div>
+        </div>
+        
+        </div>
+        
+        
+        </div>
+   
+</body>
+</html>

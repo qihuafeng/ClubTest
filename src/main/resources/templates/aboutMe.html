@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>关于我们</title>
+<link rel="stylesheet" href="static/bootstrap3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="static/bootstrap3/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="static/css/index.css" />
+<link rel="stylesheet" href="static/css/aboutMe.css" />
+
+<script src="static/aboutMeBackground/js/jquery.min.js"></script>
+</head>
+<body>
+<!-- 公共页面,头部菜单抽取 -->
+ <div class="head" style="background-color:#272936">
+   <div class="row">
+       <div th:include="common/head::#h"></div>
+    </div>
+ </div>
+ 
+ <!--星星背景  -->
+ <div class="startop">
+ <div class="stars"></div>
+ </div>
+
+<script>
+$(document).ready(function(){
+  var stars=800;
+  var $stars=$(".stars");
+  var r=800;
+  for(var i=0;i<stars;i++){
+    var $star=$("<div/>").addClass("star");
+    $stars.append($star);
+  }
+  $(".star").each(function(){
+    var cur=$(this);
+    var s=0.2+(Math.random()*1);
+    var curR=r+(Math.random()*300);
+    cur.css({ 
+      transformOrigin:"0 0 "+curR+"px",
+      transform:" translate3d(0,0,-"+curR+"px) rotateY("+(Math.random()*360)+"deg) rotateX("+(Math.random()*-50)+"deg) scale("+s+","+s+")"
+       
+    })
+  })
+})
+</script>
+ 
+ <div class="aboutMeImage">
+    <div class="container">
+         <div class="row">
+            <div class="col-md-8" style="margin-top:200px;margin-left:50px;">
+                 <h1 style="color:white;">加入我们</h1>
+                 <div style="color:blue;font-size:30px;font-weight:bold;vertical-align:middle;">-----------</div>
+	             <p style="margin-top:15px;color:white;">这里有专业的成员,我们认真负责,在这里你可以学习到很多</p>
+	             <p style="margin-top:15px;color:white;">黑天鹅,梦开始的地方</p>
+            </div>
+           
+         
+         </div>
+      </div>
+ </div>
+ 
+ <div class="aboutMeContent">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12" style="text-align:center;margin-top:50px;">
+             <h2>工作室简介</h2>
+         </div>
+         <div class="row">
+           <div class="col-md-12">
+            <p style="padding-top:50px">鼎信软件科技有限公司成立于2006年，致力行业10年，开创智能响应式建站云平台，
+                   打造集响应式网站技术、云端架构、整合营销为一体商业模式。伴随着中国互联网的成长，
+                 经历了互联网快速发展的10年，积累了雄厚自主研发技术和丰富的响应式网站开发案例。 </p> 
+	       <p>面对日新月异的互联网趋势，2016旗下“赞赞“响应式营销云平台，攻克技术难题，
+	         自主打造以SaaS云平台为构架，“快速响应式建站+全维度整合营销”为核心，
+	       从过去局限的定制建站运营转变为整合营销运营，领先实现智能响应式技术和网站可视化编辑方案，
+	       不仅提供全设备智能响应式系统的功能，更融合了良好的用户体验和多层次优化指导，
+	       渗透到互联网+的全维度整合营销运营管理中，其创新的商业模式集合了产业链的关键元素，真正意义上具备了企业发展需求的整体营销，
+	       为企业提供多元、高效、易用的网站管理方式，满足企业各个阶段不同变化的系统升级。</p> 
+        <p>在汲取互联网思维的同时，赞赞将进一步整合优质企业服务商，引入和开发更多切实解决企业需求的应用，
+             力求与生态级互联网+完美融合，并深度挖掘可持续性之间更深的契合点，输出智能、卓越、创新、整合的产品概念，全面营造一站式平台，
+              释放生态级互联网+影响力，助力企业全面互联网+转型升级，开创品牌互联网价值新领地。</p>
+           
+           </div>
+         </div>
+      </div>
+   </div>
+ 
+ </div>
+ <div class="aboutMeTeam" style="margin-bottom:30px">
+    <div style="text-align:center;padding-top:50px;"><h2>工作室成员</h2></div>
+    
+				 <div class="datas">
+					<ul>
+						<li th:each="team:${application.teamList}">
+						<div class="container">
+						  <div class="row" style="border:1px solid black">
+						    <div class="col-md-2" th:text=${team.name} style="border-right:1px solid black; height:200px;text-align:center;vertical-align:middle;"></div>
+						     <div class="col-md-2" th:src="'/static/newsImage/'+${team.imageFile}" style="border-right:1px solid black;width:100px;height:200px"></div>
+						    <div class="col-md-2" th:text=${team.position} style="border-right:1px solid black;height:200px"></div>
+						    <div class="col-md-2" th:text=${team.charge} style="border-right:1px solid black;height:200px"></div>
+						    <div class="col-md-4" th:text=${team.content} style="border-right:1px solid black;height:200px"></div>
+						    
+						  </div>
+						
+						</div>
+						</li>
+					</ul>
+				</div> 
+				
+		
+					
+					
+		
+					   
+ </div>
+ <div class="head" style="padding-top:0px;background-color:#272936">
+    <div th:include="common/foot::#f"></div>
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>成功案例</title>
+<link rel="stylesheet" th:href="@{/static/bootstrap3/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/static/bootstrap3/css/bootstrap-theme.min.css}" />
+<link rel="stylesheet" th:href="@{/static/css/index.css}" />
+<link rel="stylesheet" th:href="@{/static/css/project.css}" />
+<link rel="stylesheet" th:href="@{/static/css/film.css}"/>
+
+
+
+</head>
+<body>
+<!-- 公共页面,头部菜单抽取 -->
+ <div class="head">
+   
+     <div class="row">
+        <div th:include="common/head::#h"></div>
+    </div>
+   
+ </div>
+ 
+ <div class="newsBackgroundImage">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8" style="margin-top:200px;margin-left:50px;">
+                 <h1 style="color:white;">服务项目</h1>
+                 <div style="color:blue;font-size:30px;font-weight:bold;vertical-align:middle;">-----------</div>
+	             <p style="margin-top:15px;color:white;">黑天鹅工作室致力于为您提供最优质的服务,黑天鹅工作室致力于为您</p>
+	             <p style="margin-top:15px;color:white;">黑天鹅工作室致力于为您提</p>
+            </div>       
+         </div>
+         
+      </div>
+	</div>
+ 
+ 
+ <div class="container" style="margin-top:50px;">
+      <div class="row">
+         <div class="col-md-8">
+			<div th:include="${mainPage}::${mainPageKey}"></div>
+		</div>
+		<div class="col-md-4">		
+		    <div class="data_list">
+				<div class="data_list_title">
+					<img src="/static/images/hot_icon.png" />
+					最新热门新闻推荐
+				</div>
+				<div class="datas">
+					<ul>
+					    <li th:each="newestHotProject:${application.newestHotProjectList}"><span><a target="_blank" th:href="'/project/'+${newestHotProject.id}" th:title="${newestHotProject.name}" th:text="${newestHotProject.name}"></a></span></li>
+					</ul>
+				</div>
+			</div>
+		   <div class="data_list">
+				<div class="data_list_title">
+					<img src="/static/images/link_icon.png" />
+					友情链接
+				</div>
+				<div class="datas">
+					<ul>
+						<li th:each="link:${application.linkList}"><span><a target="_blank" th:href="${link.url}" th:title="${link.name}" th:text="${link.name}"></a></span></li>
+					</ul>
+				</div>
+			</div>		   
+		</div>
+			
+		</div>
+ </div>
+ 
+ 
+	 <div class="head" style="padding-top:30px;">
+	    <div th:include="common/foot::#f"></div>
+	 </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<meta charset="UTF-8"></meta>
+<div id="f">
+<!--  <div class="data_list">
+		<div class="data_list_title">
+		<img src="/static/images/list_icon.png"></img>
+		电影列表</div>
+		<div class="datas lImageDatas">
+			<ul class="imageUl">
+			  	  <li class="imageLi" th:each="news:${newsList}">
+			  	  	<a target="_blank" th:href="'/news/'+${news.id}" th:title="${news.name}">
+			  	  		<img class="indexFilm" th:src="'/static/newsImage/'+${news.imageName}"></img>
+			  	 	 	<p th:text="${news.name}"></p>
+			  	  	</a>
+				  </li>
+			</ul>
+		</div>
+	</div>
+	-->
+	<div class="data_list">
+	   <div class="data_list_title">
+	      <img src="/static/images/list_icon.png"></img>
+	      新闻列表 
+	   </div>
+	   <div class="newsBig">
+	     <ul>
+			<li class="newsMiddle" th:each="news:${newsList}">
+			 <div class="newsMiddle1">
+			  	 <a target="_blank" th:href="'/news/'+${news.id}" th:title="${news.name}">
+			  	  <div class="decrotion1">
+			  	  <img class="newsImage" th:src="'/static/newsImage/'+${news.imageName}" ></img>
+			  	  </div>
+			  	  <div calss="decrotion2">
+			  	    <p style="color:black;font-weight:bold;font-size:20px;" th:text="${news.name}"></p>
+			  	    <p style="color:black;margin-left:20px;" th:text="${news.summary}"></p>
+			  	  </div>
+			  	   
+			  	 </a>
+			  	</div>
+		   </li>	
+		</ul>
+	   
+	   </div>
+	
+	
+	</div>
+	<div style="margin-top:50px;">
+		<nav>
+		  <ul class="pagination pagination-sm" th:utext="${pageCode}">
+		  </ul>
+		</nav>
+	 </div>
+</div>

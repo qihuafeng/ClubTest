@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.newsBackgroundImage{
+	
+    background:url(/static/images/aboutMe-library2.jpeg)  no-repeat center center;
+  
+    height:600px;
+    width:100%;
+   
+    background-size:cover;
+
+    
+    
+}

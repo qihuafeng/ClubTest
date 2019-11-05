@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>成功案例</title>
+<link rel="stylesheet" th:href="@{/static/bootstrap3/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/static/bootstrap3/css/bootstrap-theme.min.css}" />
+<link rel="stylesheet" th:href="@{/static/css/index.css}" />
+<link rel="stylesheet" th:href="@{/static/css/aboutMe.css}" />
+<link rel="stylesheet" th:href="@{/static/css/film.css}"/>
+<link rel="stylesheet" th:href="@{/static/css/project.css}"/>
+
+
+</head>
+<body>
+<!-- 公共页面,头部菜单抽取 -->
+ <div class="head">
+   
+     <div class="row">
+        <div th:include="common/head::#h"></div>
+    </div>
+   
+ </div>
+ <div class="container">
+      <div class="row">
+         <div class="col-md-8" style="margin-bottom:0px;padding-bottom:0px;">
+			<div th:include="${mainPage}::${mainPageKey}"></div>
+		</div>
+		<div class="col-md-4">
+		    <div class="data_list">
+				<div class="data_list_title">
+					<img src="/static/images/hot_icon.png" />
+					最新热门新闻推荐
+				</div>
+				<div class="datas">
+					<ul>
+					    <li th:each="newestHotProject:${application.newestHotProjectList}"><span><a target="_blank" th:href="'/project/'+${newestHotProject.id}" th:title="${newestHotProject.name}" th:text="${newestHotProject.name}"></a></span></li>
+					</ul>
+				</div>
+			</div>
+		   <div class="data_list">
+				<div class="data_list_title">
+					<img src="/static/images/link_icon.png" />
+					友情链接
+				</div>
+				<div class="datas">
+					<ul>
+						<li th:each="link:${application.linkList}"><span><a target="_blank" th:href="${link.url}" th:title="${link.name}" th:text="${link.name}"></a></span></li>
+					</ul>
+				</div>
+			</div>		   
+		</div>
+			
+		</div>
+ </div>
+ 
+ <div class="head" style="padding-top:50px;">
+    <div th:include="common/foot::#f"></div>
+ </div>
+</body>
+</html>
