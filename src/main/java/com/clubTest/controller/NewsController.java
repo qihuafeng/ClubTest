@@ -23,7 +23,7 @@ public class NewsController {
 	
 	
 	/**
-	 * 分页查询新闻信息
+	 * 分页查询新闻信息的内容和帖子
 	 * @param page
 	 * @return
 	 * @throws Exception
