@@ -30,7 +30,7 @@ public class IndexController {
 	}
 	
 	/**
-	 * 关于本站
+	 * 关于本站内容
 	 * @return
 	 */
 	@RequestMapping("/serviceItem")
