@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.clubTest.entity.Link;
 
 /**
- * 友情链接Repository接口信息
+ * 友情链接Repository接口信息提交2
  * @author Administrator
  *
  */
