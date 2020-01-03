@@ -31,7 +31,7 @@ public class LinkAdminController {
 	private StartupRunner startupRunner;
 	
 	/**
-	 * 分页查询友情链接
+	 * 分页查询友情链接提示
 	 * @param page
 	 * @param rows
 	 * @return
